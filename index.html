@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <title>ISN - Logiciels libres et propriétaires, quelles différences ?</title>
+        <link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+        <nav>
+            <div class="menu"><i class="material-icons">menu</i></div>
+            <ul>
+                <li class="menuTit"><h3>Navigation :</h3></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#def">Logiciel ?</a></li>
+                <li><a href="#prop">Logiciel propriétaire</a></li>
+                <li><a href="#libre">Logiciel libre</a></li>
+                <li><a href="#open">Open Source ?</a></li>
+                <li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Ce site est disponible sous les termes de la licence CC-BY-SA 4.0" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Logiciels libres et propriétaires, quelles différences ?</h1>
+            <img src="assets/img/gnuhero.png" alt="we <3 GNU" />
+            <h3>Antoine BOILEAU - Hugo COURTIAL TS2</h3>
+        </header>
+        <div id="intro">
+            <h2>Introduction</h2>
+            <p>Dans les médias, sur Internet, ou dans une discussion, on entend souvent parler de logiciel dit "libre", "d'open source", ou encore de logiciel "propriétaire" ou "privateur", sans forcément comprendre.</br>
+            Ainsi, qu'est ce qu'un logiciel libre? Comment un logiciel devient-il propriétaire? Et quelles sont les différences?</p>
+        </div>
+        <div id="def">
+            <h2>Qu'est ce qu'un logiciel?</h2>
+            <p>D'après Wikipédia :</br></p>
+            <a href="https://fr.wikipedia.org/wiki/Logiciel"><p id="quote"><i class="material-icons quoteico">format_quote</i>Un logiciel est un ensemble de séquences d’instructions interprétables par une machine et d’un jeu de données nécessaires à ces opérations.<i class="material-icons quoteicoR">format_quote</i></p></a>  
+            <p>Un logiciel peut alors être vu comme un algorithme très élaboré. Les systèmes d'exploitation sont des logiciels.</br>
+            On distingue alors deux aspects d'un logiciel : son utilisation et sa séquence d'instructions (appelé "code source").</p>
+        </div>
+        <div id="prop">
+            <h2>Le logiciel propriétaire ou privateur</h2>
+            <img width=152 height=197 src="assets/img/evil.png" alt="Un cadenas" />
+            <p>Un logiciel dit "propriétaire" ou "privateur" est un logiciel (généralement vendu) dont l'accès au code source est restreint et/ou son utilisation est régie par un contrat rédigé par le fournisseur du logiciel.</br>
+            Concrètement, cela veut dire que l'utilisateur ne peut pas faire tout ce qu'il veut avec le logiciel : le revendre, le modifier...</br>
+            Les développeurs sont généralement rémunérés en vendant des licences d'utilisation.</br>
+            "Propriétaire" indique que le logiciel appartient à une personne ou une entité juridique telle qu'une société, et non à l'utilisateur. Une licence d'utilisation est accordée à l'utilisateur. Cela peut aussi indiquer que la technologie derrière le logiciel est brevetée.</br>
+            "Privateur", moins fréquemment utilisé, indique que l'utilisateur est privé de ses droits. En effet, il ne décide pas des droits qu'il lui sont accordés. Il se soumet alors aux choix du fournisseur du logiciel, pour le meilleur ou pour le pire.</br></p>
+            <h4>Exemples de logiciels propriétaires : Microsoft Windows, Adobe Photoshop, Apple iTunes, Steam (VALVe)</h4>
+            <h4>(note: Bien que le client Steam soit propriétaire, certains jeux (Teeworlds par exemple) ne le sont pas.)
+        </div>
+        <div id="libre">
+            <h2>Le logiciel libre ("Free Software")</h2>
+            <img width=268 height=261 src="assets/img/gnu.png" alt="Logo du projet GNU" />
+            <p>Un logiciel dit "libre" est un logiciel qui respecte les libertés de l'utilisateur, en suivant la philosophie du libre.</br>
+            Le concept du logiciel libre fut d'abord imaginé par Richard M. Stallman, fondateur du projet GNU. Selon lui, c'est l'utilisateur qui contrôle le logiciel, et pas l'inverse. Ainsi, l'utilisateur peut faire ce qu'il veut : le redistribuer, le modifier, l'améliorer...</br>
+            Les développeurs sont généralement rémunérés à l'aide de donations ou de sponsors.</br>
+            Des licences ont été écrites afin que chacun puisse publier légalement son travail en suivant la philosophie du libre : la GPL, les licences Creative Commons, et plus encore. Certains logiciels deviennent libres alors qu'ils étaient initialement propriétaires : c'est le cas par exemple de Blender ou de DOOM.</br>
+            Une organisation fut créée afin de défendre et de promouvoir cette cause : la Free Software Foundation, ou FSF.</br></p>
+            <h4>Exemples de logiciels libres : Mozilla Firefox, DOOM, Open/LibreOffice</h4>
+            <h4>(note: Le moteur du jeu DOOM est libre, mais le contenu du jeu original ne l'est pas.)
+        </div>
+        <div id="open">
+            <h2>Quelle est la différence entre logiciel libre et Open Source ?</h2>
+            <img width=275 height=238 src="assets/img/opensource.png" alt="Logo Open Source" />
+            <p>Vous avez peut-être déjà entendu ce terme, ou déjà vu ce logo.</br>
+            "Open Source" signifie que le code source du logiciel est ouvert, néanmoins, aucune autre garantie n'est apportée.</br>
+            La FSF déconseille l'utilisation du terme car bien que le code source soit ouvert, les idées et les libertés défendues par le logiciel libre ne sont pas forcément présentes.</br>
+            Ainsi, il est recommandé de dire simplement "logiciel libre".</p>
+        </div>
+        <script src="assets/jquery-3.1.1.min.js"></script>
+        <script>
+        var $root = $('html, body');
+        $('a').click(function() {
+            $root.animate({
+                scrollTop: $( $.attr(this, 'href')  ).offset().top
+                        
+            }, 500);
+        return false;
+        });
+        </script>
+	</body>
+</html>
