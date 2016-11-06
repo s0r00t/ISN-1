@@ -89,10 +89,16 @@ nav:hover {
 	transition-duration:0.4s;
 }
 
+ul{list-style-type: none;}
+
 .navUl{margin-top:5px;}
 
 li {
     margin-bottom: 5px;
+}
+
+li:not(:first-of-type):not(:last-of-type):hover {
+	background-color:orange;
 }
 
 #intro {
@@ -146,4 +152,8 @@ p {
     color: white;
     border-top: 5px solid lightgrey;
     border-bottom: 5px solid lightgrey;
+}
+
+#ccl {
+	padding: 10px;
 }

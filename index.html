@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8"/>
@@ -15,6 +15,7 @@
                 <li><a href="#prop">Logiciel propriétaire</a></li>
                 <li><a href="#libre">Logiciel libre</a></li>
                 <li><a href="#open">Open Source ?</a></li>
+				<li><a href="#ccl">Conclusion</a></li>
                 <li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Ce site est disponible sous les termes de la licence CC-BY-SA 4.0" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></li>
             </ul>
         </nav>
@@ -50,7 +51,8 @@
             <h2>Le logiciel libre ("Free Software")</h2>
             <img width=268 height=261 src="assets/img/gnu.png" alt="Logo du projet GNU" />
             <p>Un logiciel dit "libre" est un logiciel qui respecte les libertés de l'utilisateur, en suivant la philosophie du libre.</br>
-            Le concept du logiciel libre fut d'abord imaginé par Richard M. Stallman, fondateur du projet GNU. Selon lui, c'est l'utilisateur qui contrôle le logiciel, et pas l'inverse. Ainsi, l'utilisateur peut faire ce qu'il veut : le redistribuer, le modifier, l'améliorer...</br>
+            Le concept du logiciel libre fut d'abord imaginé par Richard M. Stallman, fondateur du projet GNU. Ce projet consiste à créer un écosystème logiciel entièrement libre, dont la principale oeuvre est le système d'exploitation GNU/Linux.</br>
+	    Selon la philosophie du projet GNU, c'est l'utilisateur qui contrôle le logiciel, et pas l'inverse. Ainsi, l'utilisateur peut faire ce qu'il veut : le redistribuer, le modifier, l'améliorer...</br>
             Les développeurs sont généralement rémunérés à l'aide de donations ou de sponsors.</br>
             Des licences ont été écrites afin que chacun puisse publier légalement son travail en suivant la philosophie du libre : la GPL, les licences Creative Commons, et plus encore. Certains logiciels deviennent libres alors qu'ils étaient initialement propriétaires : c'est le cas par exemple de Blender ou de DOOM.</br>
             Une organisation fut créée afin de défendre et de promouvoir cette cause : la Free Software Foundation, ou FSF.</br></p>
@@ -65,13 +67,18 @@
             La FSF déconseille l'utilisation du terme car bien que le code source soit ouvert, les idées et les libertés défendues par le logiciel libre ne sont pas forcément présentes.</br>
             Ainsi, il est recommandé de dire simplement "logiciel libre".</p>
         </div>
+		<div id="ccl">
+			<h2>Conclusion</h2>
+			<p>Alors, il existe une différence éthique entre l'utilisation d'un logiciel libre et l'utilisation d'un logiciel propriétaire.</br>
+			L'utilisation d'un logiciel propriétaire peut procurer un plus grand confort a l'utilisateur au détriment de ses libertés.</br>
+			L'utilisation d'un logiciel libre permet de supporter la philosophie derrière. Dans ce cas là l'utilisateur est maître du logiciel.</p>
+		</div>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>
         var $root = $('html, body');
         $('a').click(function() {
             $root.animate({
-                scrollTop: $( $.attr(this, 'href')  ).offset().top
-                        
+                scrollTop: $( $.attr(this, 'href')  ).offset().top    
             }, 500);
         return false;
         });
